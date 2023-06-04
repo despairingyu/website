@@ -1,0 +1,252 @@
+
+body{
+    background-image: url("./image/大背景3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header{
+    height: fit-content;
+    width: fit-content;
+    margin: 10px,10px,15px,25px;
+    color: rgb(244, 233, 215);
+}
+
+
+
+.header h2{
+    text-align: center;
+}
+
+/* 导航区样式 */
+.navigation{
+    width: 40%;
+    height: 50px;
+
+    border-radius: 3px;
+    display: flex;
+    gap:40px;
+    margin-left: 900px;
+    margin-top: -67px;
+
+    float:right;
+
+}
+
+.navigation p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 设置导航区链接样式 */
+.navigation p a {
+    color: rgb(224, 233, 215);
+    text-decoration:none;
+}
+
+
+/* 内容区 */
+.content{
+    height: 400px;
+
+    margin-top: 50px;
+    margin:15px auto;
+
+
+}
+
+
+.content-img{
+    height: 380px;
+    width: 20%;
+    display: inline-block;
+
+    margin-left: 60px;
+
+
+}
+
+.content-img img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #5f5b5b;
+}
+
+.content-text{
+    height: 370px;
+    width: 70%;
+
+    display: inline-block;
+    text-align: center;
+
+    background-color:rgba(229, 234, 229, 0.5);
+    margin-top: -349px;
+
+    margin-left: 340px;
+
+    border-radius: 20px;
+
+
+}
+
+.content-text p{
+    color: rgb(15, 14, 14);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* 表格元素格式 */
+tbody{
+    height: 100%;
+    width:100%;
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr{
+    height: 100%;
+    width:100%;
+    display:table-row;
+    vertical-align: inherit;
+}
+
+td{
+    width:33%;
+    height:100%;
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+
+/* 第二个区域 小狗*/
+.header-dog{
+    background-color: rgb(148, 225, 129,0.86);
+
+    text-align: center;
+}
+
+
+/* 底部区域样式 */
+.footer{
+    height:300px;
+    width: 100%;  
+    margin-bottom: -30px;  
+}
+
+.text{
+    background-color:rgb(123, 226, 132,0.85);
+    height:fit-content;
+    width:400px;
+    margin-top: -35px;
+
+    font-weight: bold;
+
+
+}
+
+
+/* 翻转图片样式 */
+.flip-card{
+    width:100%;
+    height:90%;
+    /* 设置3d效果，设置在3D容器的父元素上 perspective控制3d元素的大小和位置 */
+    perspective: 1000px;
+    font-family:sans-serif;
+    border-radius: 10px;
+
+}
+/* 翻转卡片容器 */
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* 鼠标悬停在卡片上，卡片绕Y轴旋转180度 */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* 给卡片设置阴影 */
+  /* 翻转卡片的前面 */
+.flip-card-front{
+    /* 设置阴影 */
+    box-shadow: 10px 10px 14px 0 rgba(0,0,0,0.2);
+    position:absolute;
+
+    display: flex;
+    /* flex项对齐到中间位置 */
+    justify-content:center;
+    height: 100%;
+    width:100%;
+
+    /* 设置翻转图片背面不可见 */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    /* 设置字体 背景*/
+    color: rgb(5, 5, 5);
+
+}
+
+/* 翻转卡片的背面 */
+.flip-card-back{
+    box-shadow: 10px 10px 20px 20px rgba(0,0,0,0.2);
+    position:absolute;
+
+    
+    /* 设置翻转图片背面不可见 */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    display: flex;
+    /* flex项对齐到中间位置 */
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+
+    background: linear-gradient(120deg, rgb(172, 226, 139) 30%, rgb(151, 226, 125) 78%,
+    rgb(138, 217, 78) 40%, rgb(155, 202, 119) 65%);
+
+    transform: rotateY(180deg); 
+}
+
+.flip-card-back p{
+    line-height: 1.2em;
+}
+
+td{padding: 1%;}
+
+/* 设置第一张翻转图片 */
+#xiaodudu{
+    background-image:url("image/小嘟嘟.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* 设置第二张翻转图片 */
+#dadudu{
+    background-image:url("./image/大嘟嘟.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* 设置第三张翻转图片 */
+#qiuqiu{
+    background-image:url("./image/球球.jpg") ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}

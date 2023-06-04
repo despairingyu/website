@@ -1,0 +1,169 @@
+/* 设置大背景 */
+body{
+    background-image: url("./image/大背景.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    height: fit-content;        
+    width: fit-content;
+    margin: 10px,10px,15px,25px;
+    color: rgb(235, 243, 97);
+}
+
+
+.header h2{
+    text-align: center;
+}
+
+/* 导航区样式 */
+.navigation{
+    width: 40%;
+    height: 50px;
+    /* background-color: darkgreen; */
+    border-radius: 3px;
+    display: flex;
+    gap:40px;
+    margin-left: 900px;
+    margin-top: -67px;
+
+    float:right;
+
+}
+
+.navigation p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 设置导航区链接样式 */
+.navigation p a {
+    color: rgb(230, 230, 23);
+    text-decoration:none;
+}
+
+
+/* 以下为内容区 */
+.content{
+    height: 400px;
+ 
+}
+
+/* 内容区-联系方式 */
+.content-contact{
+    /* 两个子元素居中对齐 */
+    text-align: center;
+}
+
+#wechat{
+    background-color: rgba(149, 186, 230, 0.8);
+    display: inline-block;
+    height: 100%;
+    width: 400px;
+    /* 两个联系区的水平竖直距离 */
+    margin: 15px 50px;
+    /* 添加效果 */
+    border-radius: 30px;
+    box-shadow: 0 10px 15px #34454a;
+}
+
+/* 设置联系区图片格式 */
+#wechat img{
+    height: 40%;
+    width: 70%;
+   /* 将img设置为块属性 */
+    display: block;
+    margin: auto;
+}
+/* 设置文字部分 */
+#wechat-text h4{
+    font-size: 25px;
+}
+#wechat-text p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#qq{
+    background-color:rgba(236, 252, 255, 0.8);
+    display: inline-block;
+
+    height: 100%;
+    width: 400px;
+    border-radius: 30px;
+    margin: 15px 20px;
+    box-shadow: 0 10px 15px #34454a;
+
+}
+#qq img{
+    height: 40%;
+    width: 70%;
+
+    display: block;
+    margin: auto;
+}
+
+#qq-text h4{
+    font-size: 25px;
+}
+
+#qq-text p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 设置留言区格式 */
+.footer-form{
+    width: 90%;
+    height: 150px;
+    margin: 5px auto;
+
+    text-align: center;
+}
+
+/* 设置表单格式 */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* 留言标签，设置为块元素，距离底部元素10像素 */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: antiquewhite;
+  }
+  
+  /* 设置多行文本输入框格式 */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* 设置提交按钮格式 */
+  button[type="submit"] {
+    background-color: #57aec8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* 设置鼠标选中样式 ，当鼠标悬停在type值为submit的button元素时 的样式*/
+  button[type="submit"]:hover {
+    background-color: #3e8b8e;
+  }
+

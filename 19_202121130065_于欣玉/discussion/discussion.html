@@ -1,0 +1,57 @@
+<!-- 讨论区-->
+<html>
+    <head>
+        <title>评论区</title>
+        <link rel="stylesheet" type="text/css" href="discussion.css">
+    </head>
+    
+<!-- 使用盒模型布局 将div设置为inline-block，使两个div元素并排 -->
+    <body>
+        <div class="header">
+            <h2>评论区</h2>
+        </div>
+        
+        <!-- 导航区 -->
+        <!-- 添加连接 -->
+        <div class="navigation">
+            <p><span><a href=../home/index.html >主页</a></span></p>
+            <p><span><a href=../introduction/introduction.html >自我介绍</a></span></p>
+            <p><span><a href=../hobby/hobby.html>爱好</a></span></p>
+            <p><span><a href=../photo-album/photo.html>照片墙</a></span></p>
+            <p><span><a href=../discussion/discussion.html>联系方式</a></span></p>
+        </div>
+
+        <!-- 创建评论区 -->
+        <div class="content">
+            <!-- 联系方式 -->
+            <div class="content-contact">
+                <div id="wechat">
+                    <img src="./image/wechat.jpg"alt="微信logo">
+                    <div id="wechat-text">
+                        <h4>微信号:yuxinyu</h4>
+                        <p>上面是我的微信号</p>
+                    </div>
+                </div>
+                <div id="qq">
+                    <img src="./image/qq.jpg"alt="微信logo">
+                    <div id="qq-text">
+                        <h4>qq邮箱:2904087274@qq.com</h4>
+                        <p>有事可以发我qq邮箱</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 评论区-表单 -->
+            <div class="footer-form">
+                <form>
+                    <!-- 五行留言区 -->
+                    <label for="message">留言：</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+                    <button type="submit">提交</button>
+                </form>
+            </div>  
+        </div>
+
+    </body>
+
+</html>

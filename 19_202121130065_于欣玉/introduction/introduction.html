@@ -1,0 +1,97 @@
+<!-- 自我介绍 -->
+<!-- 内容区是盒模型布局，页脚区是表格型布局，然后加上图片翻转效果 -->
+<html>
+    <head>
+        <title>自我介绍</title>
+        <link rel="stylesheet" type="text/css" href="introduction.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h2>自我介绍</h2>
+        </div>
+        
+        <!-- 导航区 -->
+        <!-- 添加连接 -->
+        <div class="navigation">
+            <p><span><a href=../home/index.html >主页</a></span></p>
+            <p><span><a href=../introduction/introduction.html >自我介绍</a></span></p>
+            <p><span><a href=../hobby/hobby.html>爱好</a></span></p>
+            <p><span><a href=../photo-album/photo.html>照片墙</a></span></p>
+            <p><span><a href=../discussion/discussion.html>联系方式</a></span></p>
+        </div>
+
+
+        <!-- 中间内容区 -->
+        <div class="content">
+            <!-- 左边放一张图片，右边放自我介绍，自我介绍的div属性float：right -->
+            <div class="content-img">
+                <img src="./image/intro-img.jpg" alt="introduction image"> 
+            </div>
+            <div class="content-text">
+                <p>
+                    你将从这里开始认识我<br>我是绝望の小于<br>上大学我吃了自找的苦<br>我再也不要做ddl战神了<br>当然也交到了很多朋友<br>我来自一个幸福的家庭<br>有爱我的妈妈和兄长
+                    <br>能过上没心没肺的日子<br>我很感激他们<br>我也永远爱他们
+                    <br>我喜欢小狗小猫,它们是天使<br>因为它们,我有了更多的爱心和责任心<br>感谢来到这个世界<br>我感受各种美好
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 底部区域，分为三个部分 ，三个图片做翻转效果，背面加上渐变效果，卡片加上阴影-->
+        <div class="header-dog">
+            <h3>爱犬</h3>
+        </div>
+
+        <!-- 给图片加上翻转，然后出现文字 -->
+        <table class="footer">
+            <tbody>
+                <tr>
+                <td>
+                    <!-- 第一个翻转图片 -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="xiaodudu">
+                                <p class="text">小嘟嘟</p>
+                            </div>
+                            <!-- 图片翻转后的文字 -->
+                            <div class="flip-card-back">
+                            <p>第一位登场的小狗是小嘟嘟<br>她实在是太卡爱啦<br>眼睛像水灵灵黑葡萄<br>是个甜妹哦</p>   
+                            </div>
+                        </div>
+                    </div>
+                </td>  
+                  <!--第二个翻转图片  -->
+                <td> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="dadudu">
+                                <p class="text">大嘟嘟</p>
+                            </div>
+                            <div class="flip-card-back">
+                             <p>第二个登场的是大嘟嘟<br>如你所见<br>大嘟嘟和小嘟嘟是兄妹<br>
+                            但是性子有点被养歪了<br>喜欢欺负别的小狗Orz<br>除此之外他还是个大胃王哈哈。</p>   
+                            </div>
+                        </div> 
+                    </div>
+                </td> 
+                  <!--第三个翻转图片 -->
+                <td> 
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="qiuqiu">
+                                <p class="text">球球</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>这只狗狗对生活的品质要求很高<br>喜欢睡在沙发上或者地毯上<br>或者我的腿上<br>喜欢晒太阳<br>喜欢吃蔬菜</p>   
+                            </div>
+                        </div>
+                    </div>
+                </td>    
+                </tr>
+            </tbody>
+        </table>
+        
+
+    </body>
+</html>

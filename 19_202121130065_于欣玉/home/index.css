@@ -1,0 +1,70 @@
+
+/* 设置主页背景颜色 */
+body{
+    background-image: url("image/背景.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    /* 设置字体格式 */
+    font-weight: bold;
+    color: aliceblue;
+
+    margin-top: 30px;
+    margin-left: 10px;
+
+}
+
+/* 导航区样式 */
+.navigation{
+    width: 40%;
+    height: 50px;
+    /* background-color: darkgreen; */
+    border-radius: 3px;
+    display: flex;
+    gap:40px;
+    margin-left: 900px;
+    margin-top: -67px;
+
+    float:right;
+
+}
+/* 导航区文本样式 */
+.navigation p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+/* 去掉链接样式 */
+.navigation p a {
+    color: aliceblue;
+    text-decoration:none;
+}
+
+.text{
+    font-size: 20px;
+    color:aliceblue;
+
+    margin-left: 750px;
+    margin-top: 50px;
+}
+
+/* 页脚区样式 */
+.footer{
+    background-color: rgba(240,240, 240, 0.7);
+    width: 100%;
+    height:fit-content;
+    
+    /* 将页脚固定在页面底部 */
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer p{
+    color:rgb(15, 87, 118) ;
+    font-weight: 20px;
+}

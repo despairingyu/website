@@ -1,0 +1,214 @@
+body{
+    background-image: url("./image/大背景.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.header{
+    height: fit-content;
+    width: fit-content;
+    margin-top: -7px;
+    color: rgb(225, 240, 241);
+}
+
+.header h2{
+    text-align: center;
+}
+
+/* 导航区样式 */
+.navigation{
+    width: 40%;
+    height: 50px;
+
+    border-radius: 3px;
+    display: flex;
+    gap:40px;
+    margin-left: 900px;
+    margin-top: -71px;
+
+    float:right;
+
+}
+
+.navigation p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 设置导航区链接样式 */
+.navigation p a {
+    color: rgb(232, 240, 245);
+    text-decoration:none;
+}
+
+/* 设置图片的宽度 */
+img{
+    width: 100%;
+}
+
+/* 轮播图片 */
+  .slide-container{
+        width: 1000px;
+        height: 600px;
+
+        /* 页面居中 */
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: aqua;
+        padding:50px;
+        box-shadow: 0,30px,50px,rgb(143, 203, 221);
+
+  }
+
+  .slide{
+    width:max-content ;
+    margin-top: 20px;
+  }
+
+  .item{
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    width: 150px;
+    height:200px;
+    /* 背景位置设置为中点 */
+    background-position: 50%,50%;
+
+    /* 设置为行内块 */
+    display: inline-block;
+    background-size: cover;
+
+    /*将item元素重叠 */
+    position: absolute;
+    /* 在Y轴垂直居中 */
+    top:50%;
+    transform:translateY(-50%) ;
+    /* 加圆角 */
+    border-radius: 10px;
+    /* 加阴影 */
+    box-shadow: 0 10px 15px #34454a;
+    /* 切换图片延迟时间 */
+    transition: .5s;
+  }
+  
+  /* 放大图 */
+.item:nth-child(1),.item:nth-child(2){
+    /* 从左上角开始 */
+    top:0;
+    left:0;
+    /* 图片铺满 */
+    width: 100%;
+    height: 100%;
+
+    /* 图形放大后原先的效果取消*/
+    transform: translateY(0);
+
+}
+
+.item:nth-child(3){
+    left:60%;
+    opacity: 0.7;
+} 
+
+/* calc 加号两端有空格 */
+.item:nth-child(4){
+    left: calc(60% + 160px);
+    opacity: 0.7;
+}
+.item:nth-child(5){
+    left: calc(60% + 320px);
+    opacity: 0.7;
+}
+/* 第六章图片不显示，透明度为0 */
+.item:nth-child(6){
+    left: calc(60% + 480px);
+    opacity: 0;
+
+} 
+
+/*  处理文字部分*/
+.item-text{
+    width: fit-content;
+    position: absolute;
+    top:20%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color:#f8f6f6;
+    /* 小图文字不显示 */
+    display: none;
+
+    opacity: 0;
+        /* 设置文字动画 1s ，慢进慢出 显示1次 */
+    animation: show-itemtext 1S ease-in-out 1 forwards;
+}
+
+
+.item:nth-child(2) .item-text{
+    display: block;
+}
+
+.item button{
+    padding: 10px 10px;
+    opacity: 0;
+    /* 设置文字动画 1s ，慢进慢出 延时0.3s 显示1次 */
+    animation: show-itemtext 1S ease-in-out 0.3s 1 forwards;
+}
+
+/* 设置文字动画 */
+@keyframes show-itemtext{
+    from{
+        opacity: 0;
+        /* 设置过渡 */
+        transform: translateY(100px);
+        filter: blur(20px);    
+    }
+    to{
+        opacity: 100%;
+        /* 设置过渡 */
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+}
+
+
+/* 设置按钮 */
+.botton{
+    /* width: 100px; */
+    position: absolute;
+    bottom: 50px;
+    margin-left: 400px;
+    text-align: center;
+
+
+}
+/* 设置按钮样式 */
+.botton-style{
+    display: inline-block;
+    width: 50px;
+    /* height=line-height可以让内容垂直居中 */
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid rgb(102, 237, 244);
+    background-color: white;
+    border-radius: 50%;
+    /* 水平方向25px */
+    margin: 0 25px;
+
+    font-size: 20px;
+}
+
+/* 鼠标选中效果 */
+.botton-style:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+
+}
+
